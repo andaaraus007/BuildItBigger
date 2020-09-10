@@ -1,0 +1,3 @@
+include ':jokeDisplay'
+include ':JokeSource'
+include ':app', ':backend'
