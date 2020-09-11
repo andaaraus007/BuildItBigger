@@ -6,13 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.udacity.jokesource.JokeSource;
 import com.udacity.jokedisplay.JokeActivity;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements EndPointsAsyncTask.EndpointsResultInterface {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,19 +42,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    public void launchJokeActivity(View view) {
-        Intent intent = new Intent(this, JokeActivity.class);
-        JokeSource jokeSource = new JokeSource();
-        String joke = jokeSource.getJoke();
-        intent.putExtra(JokeActivity.JOKE_KEY, joke);
+    @Override
+    public void endpointsResult(String result) {
+        Intent intent = new Intent(MainActivity.this, JokeActivity.class);
+        intent.putExtra(JokeActivity.JOKE_KEY, result);
         startActivity(intent);
     }
 
     public void tellJoke(View view) {
-        JokeSource jokeSource = new JokeSource();
-        Toast.makeText(this, jokeSource.getJoke(), Toast.LENGTH_SHORT).show();
+        new EndPointsAsyncTask(this).execute();
     }
-
-
 }

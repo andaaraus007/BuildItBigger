@@ -6,6 +6,6 @@ public class JokeSource {
     }
 
     public String getJoke() {
-        return "Hello from the Joke Library";
+        return "Joke? What joke? You're a Joke!";
     }
 }
