@@ -13,3 +13,9 @@ You will not be able to access files from your working directory on the producti
 2020-09-11 13:40:32.119:INFO:oejs.session:main: node0 Scavenging disabled
 2020-09-11 13:40:32.138:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@6d7b4f4c{HTTP/1.1, (http/1.1)}{localhost:8080}
 2020-09-11 13:40:32.142:INFO:oejs.Server:main: Started @1718ms
+Sep 11, 2020 8:40:32 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance default is running at http://localhost:8080/
+Sep 11, 2020 8:40:32 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8080/_ah/admin
+Sep 11, 2020 1:40:32 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFO: Dev App Server is now running
