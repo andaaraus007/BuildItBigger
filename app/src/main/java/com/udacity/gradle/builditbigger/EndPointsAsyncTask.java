@@ -12,9 +12,9 @@ import java.io.IOException;
 
 public class EndPointsAsyncTask extends AsyncTask<Void, Void, String> {
     private static MyApi myApiService = null;
-    final private EndpointsResultInterface resultInterface;
+    final private EndPointsResultInterface resultInterface;
 
-    public EndPointsAsyncTask(EndpointsResultInterface resultInterface) {
+    public EndPointsAsyncTask(EndPointsResultInterface resultInterface) {
         this.resultInterface = resultInterface;
     }
 
@@ -50,10 +50,5 @@ public class EndPointsAsyncTask extends AsyncTask<Void, Void, String> {
         if (result != null) {
             resultInterface.endpointsResult(result);
         }
-    }
-
-
-    public interface EndpointsResultInterface {
-        void endpointsResult(String result);
     }
 }

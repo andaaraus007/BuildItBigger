@@ -7,11 +7,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.udacity.jokesource.JokeSource;
 import com.udacity.jokedisplay.JokeActivity;
 
 
-public class MainActivity extends AppCompatActivity implements EndPointsAsyncTask.EndpointsResultInterface {
+public class MainActivity extends AppCompatActivity implements EndPointsResultInterface {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
