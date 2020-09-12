@@ -19,3 +19,8 @@ Sep 12, 2020 6:37:52 PM com.google.appengine.tools.development.AbstractModule st
 INFO: The admin console is running at http://localhost:8080/_ah/admin
 Sep 12, 2020 11:37:52 AM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
+2020-09-12 11:39:55.921:INFO:oejs.AbstractConnector:pool-1-thread-1: Stopped NetworkTrafficSelectChannelConnector@6d7b4f4c{HTTP/1.1, (http/1.1)}{localhost:8080}
+2020-09-12 11:39:55.924:INFO:oejsh.ContextHandler:pool-1-thread-1: Stopped c.g.a.t.d.j.DevAppEngineWebAppContext@2f953efd{/,file:///C:/Users/Eric/Documents/GitHub/FinalProject/backend/build/exploded-backend/,UNAVAILABLE}{C:\Users\Eric\Documents\GitHub\FinalProject\backend\build\exploded-backend}
+Sep 12, 2020 11:39:55 AM com.google.appengine.tools.development.AbstractModule shutdown
+INFO: Shutting down module instance default
+Shutting down.
