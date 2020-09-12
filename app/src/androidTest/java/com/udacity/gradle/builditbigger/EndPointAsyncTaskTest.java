@@ -16,7 +16,7 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(AndroidJUnit4.class)
 public class EndPointAsyncTaskTest {
 
-    private String result = null;
+    private String result = "";
 
     @Test
     public void jokeIsNotEmptyTest() {
@@ -32,7 +32,6 @@ public class EndPointAsyncTaskTest {
 
         try {
             countDownLatch.await();
-            assertNotNull("joke is null", result);
             assertFalse("joke is empty", TextUtils.isEmpty(result));
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -1,6 +1,7 @@
 package com.udacity.gradle.builditbigger;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -11,6 +12,7 @@ import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 import java.io.IOException;
 
 public class EndPointsAsyncTask extends AsyncTask<Void, Void, String> {
+    private static String TAG = EndPointsAsyncTask.class.getSimpleName();
     private static MyApi myApiService = null;
     final private EndPointsResultInterface resultInterface;
 
@@ -41,7 +43,8 @@ public class EndPointsAsyncTask extends AsyncTask<Void, Void, String> {
         try {
             return myApiService.getJoke().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            Log.e(TAG, "doInBackground: ", e);
+            return "";
         }
     }
 

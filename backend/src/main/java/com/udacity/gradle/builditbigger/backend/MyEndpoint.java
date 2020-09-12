@@ -18,13 +18,12 @@ import com.udacity.jokesource.JokeSource;
 )
 public class MyEndpoint {
 
-    /** A simple endpoint method that takes a name and says Hi back */
     @ApiMethod(name = "getJoke")
     public MyBean getJoke() {
         JokeSource jokeSource = new JokeSource();
         String joke = jokeSource.getJoke();
         MyBean response = new MyBean();
-        response.setData("Here's a joke: " + joke);
+        response.setData(joke);
 
         return response;
     }

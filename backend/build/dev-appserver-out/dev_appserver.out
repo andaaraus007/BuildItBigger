@@ -1,26 +1,21 @@
-Sep 11, 2020 2:04:14 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+Sep 12, 2020 11:37:51 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\Eric\Documents\GitHub\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-2020-09-11 14:04:14.757:INFO::main: Logging initialized @524ms to org.eclipse.jetty.util.log.StdErrLog
-2020-09-11 14:04:14.813:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
-Sep 11, 2020 9:04:15 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+2020-09-12 11:37:51.675:INFO::main: Logging initialized @486ms to org.eclipse.jetty.util.log.StdErrLog
+2020-09-12 11:37:51.725:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+Sep 12, 2020 6:37:51 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
 WARNING: Your working directory, (C:\Users\Eric\Documents\GitHub\FinalProject\backend) is not equal to your 
 web application root (C:\Users\Eric\Documents\GitHub\FinalProject\backend\build\exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-2020-09-11 14:04:15.171:INFO:oejs.Server:main: jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_242-release-1644-b01
-2020-09-11 14:04:15.846:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@2f953efd{/,file:///C:/Users/Eric/Documents/GitHub/FinalProject/backend/build/exploded-backend/,AVAILABLE}{C:\Users\Eric\Documents\GitHub\FinalProject\backend\build\exploded-backend}
-2020-09-11 14:04:15.846:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
-2020-09-11 14:04:15.846:INFO:oejs.session:main: node0 Scavenging disabled
-2020-09-11 14:04:15.863:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@6d7b4f4c{HTTP/1.1, (http/1.1)}{localhost:8080}
-2020-09-11 14:04:15.867:INFO:oejs.Server:main: Started @1634ms
-Sep 11, 2020 9:04:15 PM com.google.appengine.tools.development.AbstractModule startup
+2020-09-12 11:37:52.079:INFO:oejs.Server:main: jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 1.8.0_242-release-1644-b01
+2020-09-12 11:37:52.730:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@2f953efd{/,file:///C:/Users/Eric/Documents/GitHub/FinalProject/backend/build/exploded-backend/,AVAILABLE}{C:\Users\Eric\Documents\GitHub\FinalProject\backend\build\exploded-backend}
+2020-09-12 11:37:52.731:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2020-09-12 11:37:52.731:INFO:oejs.session:main: node0 Scavenging disabled
+2020-09-12 11:37:52.746:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@6d7b4f4c{HTTP/1.1, (http/1.1)}{localhost:8080}
+2020-09-12 11:37:52.750:INFO:oejs.Server:main: Started @1561ms
+Sep 12, 2020 6:37:52 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-Sep 11, 2020 9:04:15 PM com.google.appengine.tools.development.AbstractModule startup
+Sep 12, 2020 6:37:52 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-Sep 11, 2020 2:04:15 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+Sep 12, 2020 11:37:52 AM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
-2020-09-11 14:04:46.321:INFO:oejs.AbstractConnector:pool-1-thread-1: Stopped NetworkTrafficSelectChannelConnector@6d7b4f4c{HTTP/1.1, (http/1.1)}{localhost:8080}
-2020-09-11 14:04:46.323:INFO:oejsh.ContextHandler:pool-1-thread-1: Stopped c.g.a.t.d.j.DevAppEngineWebAppContext@2f953efd{/,file:///C:/Users/Eric/Documents/GitHub/FinalProject/backend/build/exploded-backend/,UNAVAILABLE}{C:\Users\Eric\Documents\GitHub\FinalProject\backend\build\exploded-backend}
-Sep 11, 2020 2:04:46 PM com.google.appengine.tools.development.AbstractModule shutdown
-INFO: Shutting down module instance default
-Shutting down.
